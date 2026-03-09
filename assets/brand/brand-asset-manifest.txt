@@ -1,0 +1,13 @@
+assets/brand/logo/svg/bitpod-logo-avatar-square-black.svg
+assets/brand/logo/svg/bitpod-logo-avatar-square-color.svg
+assets/brand/logo/svg/bitpod-logo-avatar-square-white.svg
+assets/brand/logo/svg/bitpod-logo-horizontal-color.svg
+assets/brand/logo/svg/bitpod-logo-horizontal-white.svg
+assets/brand/logo/svg/bitpod-logo-mark-black.svg
+assets/brand/logo/svg/bitpod-logo-mark-color.svg
+assets/brand/logo/svg/bitpod-logo-mark-negative.svg
+assets/brand/logo/svg/bitpod-logo-mark-white.svg
+assets/brand/logo/svg/bitpod-logo-vertical-color.svg
+assets/brand/guidelines/brand-guidelines.md
+assets/brand/figma/figma-master-file-handoff.md
+README.md

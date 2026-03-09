@@ -1,0 +1,13 @@
+<svg width="1000" height="320" viewBox="0 0 1000 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(40 40)">
+
+<g>
+  <path d="M82 24C111 24 138 24 162 24C185 24 202 41 202 64C202 89 183 106 157 106H115C90 106 72 117 57 133L16 177L28 54C31 36 45 24 64 24H82Z" fill="#FFFFFF"/>
+  <path d="M16 177L69 126C83 112 99 104 121 104H203C203 168 152 220 90 220H39C25 220 16 211 16 197V177Z" fill="#FFFFFF"/>
+  <path d="M41 140C58 121 78 112 105 112H182C176 151 144 177 104 182H41V140Z" fill="#0C122C"/>
+</g>
+
+</g>
+<text x="300" y="145" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="96" font-weight="700">BitPod App</text>
+<text x="304" y="205" fill="#D9DDE8" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="400" letter-spacing="1">BITCOIN-NATIVE • WORK IN PROGRESS</text>
+</svg>
