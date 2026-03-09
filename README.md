@@ -9,6 +9,8 @@ Public asset host for BitPod org/profile and design starter materials.
 - `assets/brand/figma/` — Figma handoff docs
 - `assets/brand/social/repo-previews/` — repo social preview images
 - `assets/brand/brand-asset-manifest.txt` — starter package manifest
+- `assets/brand/asset-provenance.md` — ownership/source/status metadata
+- `assets/brand/BRAND_FREEZE_PHASE1.md` — no-redesign freeze note for phase 1
 
 ## Import source and parity
 
@@ -32,3 +34,9 @@ Intentional repo-only additions:
 - Phase 1: install/import starter assets with minimal modification.
 - Phase 2+: normalize names/exports only with explicit decision records.
 - Keep originals editable and avoid destructive overwrites.
+
+## Phase 1 freeze
+
+- Placeholder identity is intentional for Phase 1.
+- No logo/visual redesign in this phase.
+- Redesign and normalization work is deferred to [BIT-57](https://linear.app/bitpod-app/issue/BIT-57/brand-assets-phase-2-naming-normalization-export-workflow-figma-import).
