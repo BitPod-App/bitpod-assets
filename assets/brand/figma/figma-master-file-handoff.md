@@ -1,64 +1,30 @@
-# BitPod App — Figma Master Design File Handoff
+# BitPod App — Figma Master File Handoff (Corrected Package)
+
+## Truth first
+This corrected package is based on the **real approved logo image**, not an approximate redraw.
 
 ## Recommended Figma pages
-### 00 Cover
-- file title
-- version
-- status: working identity / WIP
+- 00 Cover
+- 01 Exact Logo Assets
+- 02 Lockups
+- 03 Color + Type
+- 04 Usage
+- 05 Export Bench
 
-### 01 Logo Marks
-Include:
-- color mark
-- white mark
-- black mark
-- negative mark
+## Import order
+1. Import `bitpod-logo-mark-exact.svg`
+2. Import avatar square variants
+3. Import horizontal and vertical lockups
+4. Create components from those imported assets
+5. Keep a note in-file that these are raster-backed SVGs until a true vector redraw exists
 
-### 02 Lockups
-Include:
-- horizontal lockup
-- vertical lockup
-- avatar square variants
-
-### 03 Colors
-Create color styles for:
-- Navy `#0C122C`
-- Off-white `#F4EFE8`
-- Muted `#B9BFCE`
-- Orange `#F2912C`
-- Gradient stops:
-  - `#FF6A1A`
-  - `#FFB12A`
-  - `#D945C1`
-  - `#5A2BE7`
-
-### 04 Usage
-Show:
-- dark background examples
-- light background examples
-- minimum size
-- clear space
-- do / don't
-
-### 05 Social Templates
-Add:
-- repo card 1280×640
-- runtime portrait card 1280×640
-- future banner card
-
-### 06 Export Bench
-Export presets:
-- SVG
-- PNG @1x
-- PNG @2x
-
-## Recommended components
-- Logo / Mark / Color
+## Components to create
+- Logo / Mark / Exact
 - Logo / Mark / White
 - Logo / Mark / Black
+- Logo / Avatar / Square / Color
 - Logo / Lockup / Horizontal / Color
 - Logo / Lockup / Vertical / Color
-- Logo / Avatar / Square / Color
 
-## Notes
-This package is intentionally small and editable.
-It should function as a real starter system, not a fake enterprise museum exhibit.
+## Needed future upgrade
+Manual vector tracing/redraw of the approved mark.

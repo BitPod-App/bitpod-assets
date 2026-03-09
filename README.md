@@ -14,15 +14,21 @@ Public asset host for BitPod org/profile and design starter materials.
 
 ## Import source and parity
 
-Source package imported from:
+Current Phase 1 working source imported from:
 
-- `/Users/cjarguello/bitpod-app/local-workspace/local-working-files/bitpod_brand_starter/assets/brand`
+- `/Users/cjarguello/bitpod-app/local-workspace/local-working-files/bitpod_brand_starter_fixed.zip`
 
-Intentional repo-only additions:
+Superseded source (not canonical):
+
+- `bitpod_brand_starter.zip` / folder variant `bitpod_brand_starter`
+
+Intentional repo additions beyond package import:
 
 - `assets/brand/README.md`
 - `assets/brand/social/repo-previews/bitpod-tools-preview.png`
 - `assets/brand/social/repo-previews/sector-feeds-preview.png`
+- `assets/brand/asset-provenance.md`
+- `assets/brand/BRAND_FREEZE_PHASE1.md`
 
 ## Priority previews
 

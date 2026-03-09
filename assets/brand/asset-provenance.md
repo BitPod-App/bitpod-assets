@@ -1,26 +1,30 @@
 # BitPod Brand Asset Provenance
 
-This registry tracks source, ownership, usage rights status, and lifecycle state for current brand assets.
+This registry tracks source, owner, usage rights status, and lifecycle status for current brand assets.
 
-Notes:
+Status vocabulary used in this file:
 
-- `usage_rights_status` is intentionally conservative until explicit legal/licensing policy is finalized.
-- `status` values:
-  - `placeholder` = usable now, expected to evolve
-  - `candidate` = exploratory/optional
-  - `final` = approved canonical artifact
+- `placeholder`
+- `working`
+- `final`
+- `superseded`
 
-| asset_path | source | owner | usage_rights_status | status | notes |
-|---|---|---|---|---|---|
-| `assets/brand/logo/svg/bitpod-logo-mark-color.svg` | `bitpod_brand_starter` package import | BitPod App | pending formal policy | placeholder | primary color mark |
-| `assets/brand/logo/svg/bitpod-logo-mark-white.svg` | `bitpod_brand_starter` package import | BitPod App | pending formal policy | placeholder | white variant |
-| `assets/brand/logo/svg/bitpod-logo-mark-black.svg` | `bitpod_brand_starter` package import | BitPod App | pending formal policy | placeholder | black variant |
-| `assets/brand/logo/svg/bitpod-logo-mark-negative.svg` | `bitpod_brand_starter` package import | BitPod App | pending formal policy | placeholder | negative variant |
-| `assets/brand/logo/svg/bitpod-logo-horizontal-color.svg` | `bitpod_brand_starter` package import | BitPod App | pending formal policy | placeholder | horizontal lockup |
-| `assets/brand/logo/svg/bitpod-logo-horizontal-white.svg` | `bitpod_brand_starter` package import | BitPod App | pending formal policy | placeholder | horizontal white lockup |
-| `assets/brand/logo/svg/bitpod-logo-vertical-color.svg` | `bitpod_brand_starter` package import | BitPod App | pending formal policy | placeholder | vertical lockup |
-| `assets/brand/logo/svg/bitpod-logo-avatar-square-color.svg` | `bitpod_brand_starter` package import | BitPod App | pending formal policy | placeholder | square avatar color |
-| `assets/brand/logo/svg/bitpod-logo-avatar-square-white.svg` | `bitpod_brand_starter` package import | BitPod App | pending formal policy | placeholder | square avatar white |
-| `assets/brand/logo/svg/bitpod-logo-avatar-square-black.svg` | `bitpod_brand_starter` package import | BitPod App | pending formal policy | placeholder | square avatar black |
-| `assets/brand/social/repo-previews/bitpod-tools-preview.png` | local working file import + repo normalization | BitPod App | pending formal policy | placeholder | org/profile preview (priority) |
-| `assets/brand/social/repo-previews/sector-feeds-preview.png` | local working file import + repo normalization | BitPod App | pending formal policy | placeholder | org/profile preview |
+## Current Phase 1 working set
+
+| asset_set | paths | source | owner | usage_rights_status | status | note |
+|---|---|---|---|---|---|---|
+| corrected logo SVG wrappers | `assets/brand/logo/svg/*.svg` | `bitpod_brand_starter_fixed.zip` | BitPod App | pending formal policy | working | visually faithful to approved logo; not canonical vector master |
+| corrected logo PNG exports | `assets/brand/logo/png/*.png` | `bitpod_brand_starter_fixed.zip` | BitPod App | pending formal policy | working | practical delivery assets for Phase 1 |
+| repo social preview cards | `assets/brand/social/repo-previews/bitpod-tools-preview.png`, `assets/brand/social/repo-previews/sector-feeds-preview.png` | local working file imports | BitPod App | pending formal policy | placeholder | operational org/profile previews |
+
+## Superseded assets/source
+
+| asset_set | paths | source | owner | usage_rights_status | status | note |
+|---|---|---|---|---|---|---|
+| legacy starter source package | `bitpod_brand_starter.zip` and folder variant `bitpod_brand_starter` | earlier starter generation | BitPod App | pending formal policy | superseded | drifted from approved/current logo |
+| legacy mismatched logo variants retained for traceability | `assets/brand/superseded/bitpod_brand_starter_legacy/logo/svg/bitpod-logo-mark-color.svg`, `assets/brand/superseded/bitpod_brand_starter_legacy/logo/svg/bitpod-logo-mark-negative.svg` | earlier starter generation | BitPod App | pending formal policy | superseded | retained only for audit/traceability; do not use as source of truth |
+
+## Canonicality note
+
+No asset in this Phase 1 working set should be interpreted as final canonical vector master.
+Canonical vector master work is explicitly deferred under BIT-57.
