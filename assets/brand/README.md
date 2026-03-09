@@ -13,6 +13,7 @@ This folder contains a working starter brand system for BitPod App.
 - `assets/brand/logo/svg`
 - `assets/brand/guidelines`
 - `assets/brand/figma`
+- `assets/brand/social/repo-previews`
 
 ## Important
 This is a starter package for an in-progress product, not a final immutable brand identity.
