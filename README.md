@@ -16,7 +16,7 @@ Public asset host for BitPod org/profile and design starter materials.
 
 Current Phase 1 working source imported from:
 
-- `/Users/cjarguello/bitpod-app/local-workspace/local-working-files/bitpod_brand_starter_fixed.zip`
+- `$WORKSPACE/local-workspace/local-working-files/bitpod_brand_starter_fixed.zip`
 
 Superseded source (not canonical):
 
