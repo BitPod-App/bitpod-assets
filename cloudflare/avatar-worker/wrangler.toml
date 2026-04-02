@@ -1,0 +1,8 @@
+name = "bitpod-avatar-worker"
+main = "src/index.js"
+compatibility_date = "2026-04-02"
+workers_dev = true
+
+[vars]
+CLOUDFLARE_IMAGES_VARIANT = "public"
+MAX_PUBLIC_URL_TTL_SECONDS = "86400"
