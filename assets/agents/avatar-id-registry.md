@@ -68,7 +68,7 @@ contract.
 
 | public_id | class | current_repo_asset |
 | --- | --- | --- |
-| `taylor01-hq` | Taylor01 canonical square avatar | `assets/agents/taylor01/png/taylor01-hq-gal-avatar-square-v1.png` |
+| `taylor01-hq` | Taylor01 canonical square avatar | `assets/agents/taylor01/png/taylor01-hq-headset-avatar-square-v2.png` |
 | `taylor01-main` | Taylor01 personal square avatar | `assets/agents/taylor01/jpeg/taylor01-main-blue-avatar-square-v1.jpeg` |
 | `taylor01-runtime` | Taylor01 runtime square avatar | `assets/agents/taylor01/jpeg/taylor01-runtime-avatar-square-v1.jpeg` |
 | `taylor01-bitpod-headset` | Taylor01 square avatar with BitPod headset branding | `assets/agents/taylor01/png/taylor01-blue-headset-bitpod-square-v1.png` |

@@ -43,7 +43,7 @@ Current preferred public ID for Taylor01's main UI avatar:
 
 Current source asset:
 
-- `assets/agents/taylor01/png/taylor01-hq-gal-avatar-square-v1.png`
+- `assets/agents/taylor01/png/taylor01-hq-headset-avatar-square-v2.png`
 
 ## Cloudflare Design
 
