@@ -18,9 +18,11 @@ Canonical inputs:
 - validates `public_id` against the registry
 - validates `h` as an HMAC-SHA256 signature of `<public_id>:<exp>`
 - rejects expired or over-long public URLs
+- serves a bundled internal Worker asset when `worker_asset_path` is present
 - signs the private Cloudflare Images delivery URL internally
 - proxies the image bytes instead of redirecting to Cloudflare Images
-- returns `503` when the avatar is registered but not yet wired to Cloudflare
+- returns `503` only when the avatar is registered but has neither a bundled
+  worker asset nor a Cloudflare image wiring
 
 ## Required secrets/config
 
@@ -33,10 +35,11 @@ Canonical inputs:
 
 ## Current status
 
-This is a scaffold only.
+The first-path implementation can run entirely from bundled Worker assets.
 
-It does not deploy anything by itself and does not yet populate
-`cloudflare_image_id` values in the registry.
+Cloudflare Images remains the preferred long-term path for larger or more
+numerous avatars, but it is no longer required to serve the first signed avatar
+URL.
 
 ## Local helper
 

@@ -69,6 +69,15 @@ function cloudflareImageUrl(env, imageId) {
   return `https://imagedelivery.net/${accountHash}/${imageId}/${variant}`;
 }
 
+async function fetchBundledAsset(request, env, record) {
+  const assetPath = record.worker_asset_path || "";
+  if (!assetPath || !env.ASSETS) return null;
+  const assetUrl = new URL(request.url);
+  assetUrl.pathname = assetPath;
+  assetUrl.search = "";
+  return env.ASSETS.fetch(new Request(assetUrl.toString(), { method: "GET" }));
+}
+
 async function signCloudflareImageUrl(url, signingKey, expirySeconds) {
   const expiry = getNowSeconds() + expirySeconds;
   url.searchParams.set("exp", String(expiry));
@@ -93,6 +102,10 @@ export default {
         service: "bitpod-avatar-worker",
         ids: registry.ids.length,
       });
+    }
+
+    if (request.method === "GET" && url.pathname.startsWith("/__avatars/")) {
+      return notFound();
     }
 
     const avatarMatch = url.pathname.match(/^\/a\/([a-z0-9-]+)$/);
@@ -128,6 +141,18 @@ export default {
     }
 
     if (!record.cloudflare_image_id) {
+      const bundled = await fetchBundledAsset(request, env, record);
+      if (bundled && bundled.ok) {
+        const headers = new Headers();
+        const contentType = bundled.headers.get("content-type");
+        if (contentType) headers.set("content-type", contentType);
+        headers.set("cache-control", "public, max-age=300, s-maxage=300");
+        return new Response(bundled.body, {
+          status: 200,
+          headers,
+        });
+      }
+
       return json(
         {
           ok: false,
