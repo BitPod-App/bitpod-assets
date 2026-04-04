@@ -1,0 +1,17 @@
+{
+  "persona": null,
+  "asset_type": null,
+  "scene": null,
+  "look": null,
+  "source_model": null,
+  "base_identity_score": null,
+  "persona_score": null,
+  "confusion_score": null,
+  "total_score": null,
+  "decision": null,
+  "hard_fail_reasons": [],
+  "required_anchors_present": [],
+  "missing_required_anchors": [],
+  "forbidden_traits_detected": [],
+  "notes": null
+}
