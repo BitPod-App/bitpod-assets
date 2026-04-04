@@ -11,8 +11,14 @@ Build a small helper system that:
 4. routes assets into `avatars/`, `approved/`, `conditional/`, `rejected/`, or `videos/`
 5. supports a manual human score and decision flow
 
+Validation rules for v1:
+- `refs/` accepts still-image reference assets of type `image` and `avatar`
+- `refs/` does not accept `video`
+- metadata sidecars live next to each asset by default
+- `metadata/` folders stay in the scaffold but are not a default intake destination
+
 ## Required folders
-For each persona (`taylor`, `orange`, `kati`, `shiva`, `vera`) create:
+For each persona (`taylor`, `ember`, `kati`, `shiva`, `vera`) create:
 - `refs/`
 - `approved/`
 - `conditional/`

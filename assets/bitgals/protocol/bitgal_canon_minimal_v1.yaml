@@ -35,7 +35,7 @@ folders:
   shared_base: assets/bitgals/shared_base
   personas:
     taylor: assets/bitgals/taylor
-    orange: assets/bitgals/orange
+    ember: assets/bitgals/ember
     kati: assets/bitgals/kati
     shiva: assets/bitgals/shiva
     vera: assets/bitgals/vera
@@ -72,7 +72,7 @@ personas:
       - messy_hair
       - nightclub_scene
       - loud_jewelry
-  orange:
+  ember:
     role: performer_creator
     dominant_signal: motion
     required:

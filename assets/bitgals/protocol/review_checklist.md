@@ -6,7 +6,7 @@ Use this fast checklist before an asset enters the official library.
 - Yes / No
 
 ## 2. Right persona read?
-- Taylor / Orange / Kati / Shiva / Vera / Wrong
+- Taylor / Ember / Kati / Shiva / Vera / Wrong
 
 ## 3. Required anchors present?
 - Check against `bitgal_canon_minimal_v1.yaml`

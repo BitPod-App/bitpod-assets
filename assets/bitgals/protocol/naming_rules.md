@@ -5,7 +5,7 @@
 
 ## Allowed persona values
 - `taylor`
-- `orange`
+- `ember`
 - `kati`
 - `shiva`
 - `vera`
@@ -17,7 +17,7 @@
 
 ## Examples
 - `taylor_avatar_hq_black-suit_v01.png`
-- `orange_video_stage_singing_v02.mp4`
+- `ember_video_stage_singing_v02.mp4`
 - `kati_image_studio_gold-heavy_v03.jpg`
 - `shiva_avatar_night_gloss-black_v01.webp`
 - `vera_image_serverroom_glasses_v01.png`
@@ -26,11 +26,12 @@
 - square still intended for profile use -> `avatars/`
 - still image not specifically avatar -> `approved/` or `conditional/`
 - moving media -> `videos/`
-- anchor/reference material -> `refs/`
+- still-image reference material (`image` or `avatar`, never `video`) -> `refs/`
 - failed output -> `rejected/`
 
 ## Metadata rule
-Use a sidecar JSON with the same filename plus `.json` when possible.
+Use a sidecar JSON with the same filename plus `.json` next to the asset by default.
+Leave `metadata/` folders unused in v1 unless a later workflow explicitly requests them.
 
 Example:
 - `kati_avatar_studio_gold-heavy_v01.png`
