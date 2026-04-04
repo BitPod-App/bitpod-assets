@@ -8,9 +8,26 @@ Public asset host for BitPod org/profile and design starter materials.
 - `assets/brand/guidelines/` — brand guidance docs
 - `assets/brand/figma/` — Figma handoff docs
 - `assets/brand/social/repo-previews/` — repo social preview images
+- `assets/agents/` — agent avatar assets, registry, and hosting contract
 - `assets/brand/brand-asset-manifest.txt` — starter package manifest
 - `assets/brand/asset-provenance.md` — ownership/source/status metadata
 - `assets/brand/BRAND_FREEZE_PHASE1.md` — no-redesign freeze note for phase 1
+
+## Agent avatar lane
+
+Current agent/avatar canon now lives under:
+
+- `assets/agents/`
+
+Current stable-contract files:
+
+- `assets/agents/avatar-id-registry.md`
+- `assets/agents/avatar-id-registry.json`
+- `assets/agents/avatar-hosting-contract.md`
+
+Current edge scaffold for hosted avatar delivery:
+
+- `cloudflare/avatar-worker/`
 
 ## Import source and parity
 

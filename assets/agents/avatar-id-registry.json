@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "owner": "BitPod brand and agent surfaces",
+  "public_url_pattern": "https://bitpod.com/a/<public_id>?exp=<unix_seconds>&h=<signature>",
+  "ids": [
+    {
+      "public_id": "taylor01-hq",
+      "persona_class": "Taylor01",
+      "display_name": "Taylor01 HQ",
+      "repo_asset": "assets/agents/taylor01/png/taylor01-hq-gal-avatar-square-v1.png",
+      "cloudflare_image_id": null,
+      "worker_asset_path": "/__avatars/taylor01-hq.png"
+    },
+    {
+      "public_id": "taylor01-main",
+      "persona_class": "Taylor01",
+      "display_name": "Taylor01 Main",
+      "repo_asset": "assets/agents/taylor01/jpeg/taylor01-main-blue-avatar-square-v1.jpeg",
+      "cloudflare_image_id": null
+    },
+    {
+      "public_id": "taylor01-runtime",
+      "persona_class": "Taylor01",
+      "display_name": "Taylor01 Runtime",
+      "repo_asset": "assets/agents/taylor01/jpeg/taylor01-runtime-avatar-square-v1.jpeg",
+      "cloudflare_image_id": null
+    },
+    {
+      "public_id": "taylor01-bitpod-headset",
+      "persona_class": "Taylor01",
+      "display_name": "Taylor01 BitPod Headset",
+      "repo_asset": "assets/agents/taylor01/png/taylor01-blue-headset-bitpod-square-v1.png",
+      "cloudflare_image_id": null
+    },
+    {
+      "public_id": "taylor01-genesis",
+      "persona_class": "Taylor01",
+      "display_name": "Taylor01 Genesis",
+      "repo_asset": "assets/agents/taylor01/png/taylor01-genesis-nft-square-v1.png",
+      "cloudflare_image_id": null
+    },
+    {
+      "public_id": "bitgal-orange-headset",
+      "persona_class": "BitGal",
+      "display_name": "BitGal Orange Headset",
+      "repo_asset": "assets/agents/taylor01/png/taylor01-orange-bitpod-avatar-square-v1.png",
+      "cloudflare_image_id": null
+    },
+    {
+      "public_id": "bitpod-mark",
+      "persona_class": "BrandMark",
+      "display_name": "BitPod Mark",
+      "repo_asset": "assets/agents/taylor01/png/bitpod-app-logo-square-v1.png",
+      "cloudflare_image_id": null
+    }
+  ]
+}
