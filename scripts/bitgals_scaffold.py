@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 
-ROOT = Path("assets/bitgals")
+ROOT = Path("bitgals")
 PERSONAS = ["taylor", "ember", "kati", "shiva", "vera"]
 SUBFOLDERS = ["refs", "approved", "conditional", "rejected", "avatars", "videos", "metadata"]
 

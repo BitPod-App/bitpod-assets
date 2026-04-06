@@ -3,7 +3,7 @@ import argparse
 import re
 from pathlib import Path
 
-ROOT = Path("assets/bitgals")
+ROOT = Path("bitgals")
 PERSONAS = {"taylor", "ember", "kati", "shiva", "vera"}
 TYPES = {"avatar", "image", "video"}
 EXTS = {
@@ -46,7 +46,7 @@ def validate(path: Path) -> list[str]:
 
     parts = relative.parts
     if len(parts) < 3:
-        errors.append("BitGals asset paths must be under assets/bitgals/{persona}/{category}/")
+        errors.append("BitGals asset paths must be under bitgals/{persona}/{category}/")
         return errors
 
     folder_persona, category = parts[0], parts[1]

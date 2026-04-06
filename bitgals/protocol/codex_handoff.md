@@ -1,6 +1,6 @@
 # Codex Handoff — BitGals v1
 
-Implement a minimal ingestion system for `assets/bitgals/`.
+Implement a minimal ingestion system for `bitgals/`.
 
 ## Goal
 Do not build a giant platform.
@@ -28,8 +28,8 @@ For each persona (`taylor`, `ember`, `kati`, `shiva`, `vera`) create:
 - `metadata/`
 
 Also create:
-- `assets/bitgals/shared_base/`
-- `assets/bitgals/protocol/`
+- `bitgals/shared_base/`
+- `bitgals/protocol/`
 
 ## Minimal CLI ideas
 ### 1. scaffold

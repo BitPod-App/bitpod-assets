@@ -1,0 +1,54 @@
+{
+  "persona": "taylor01",
+  "published_assets": [
+    {
+      "id": "taylor01-hq",
+      "type": "avatar",
+      "path": "avatars/taylor01-hq-headset-avatar-square-v2.png",
+      "cloudflare_enabled": true,
+      "status": "live"
+    },
+    {
+      "id": "taylor01-main",
+      "type": "avatar",
+      "path": "avatars/taylor01-main-blue-avatar-square-v1.jpeg",
+      "cloudflare_enabled": false,
+      "status": "published"
+    },
+    {
+      "id": "taylor01-runtime",
+      "type": "avatar",
+      "path": "avatars/taylor01-runtime-avatar-square-v1.jpeg",
+      "cloudflare_enabled": false,
+      "status": "published"
+    },
+    {
+      "id": "taylor01-bitpod-headset",
+      "type": "avatar",
+      "path": "avatars/taylor01-blue-headset-bitpod-square-v1.png",
+      "cloudflare_enabled": false,
+      "status": "published"
+    },
+    {
+      "id": "taylor01-genesis",
+      "type": "avatar",
+      "path": "avatars/taylor01-genesis-nft-square-v1.png",
+      "cloudflare_enabled": false,
+      "status": "published"
+    },
+    {
+      "id": "taylor01-hq-gal",
+      "type": "avatar",
+      "path": "avatars/taylor01-hq-gal-avatar-square-v1.png",
+      "cloudflare_enabled": false,
+      "status": "published"
+    },
+    {
+      "id": "taylor01-hq-portrait",
+      "type": "image",
+      "path": "images/taylor01-hq-gal-portrait-v1.png",
+      "cloudflare_enabled": false,
+      "status": "published"
+    }
+  ]
+}

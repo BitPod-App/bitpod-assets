@@ -83,6 +83,6 @@ python3 scripts/bitgals_intake.py /path/to/source.mp4 \
 Validate a BitGals filename or asset path:
 
 ```bash
-python3 scripts/bitgals_validate.py assets/bitgals/ember/approved/ember_image_stage_singing_v01.png
-python3 scripts/bitgals_validate.py assets/bitgals/taylor/avatars/taylor_avatar_hq_black-suit_v01.png
+python3 scripts/bitgals_validate.py bitgals/ember/approved/ember_image_stage_singing_v01.png
+python3 scripts/bitgals_validate.py bitgals/taylor/avatars/taylor_avatar_hq_black-suit_v01.png
 ```

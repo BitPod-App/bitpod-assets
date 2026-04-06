@@ -18,9 +18,9 @@ They are suitable as a practical stopgap until a proper vector redraw is created
 - Active Phase 1 working source: `bitpod_brand_starter_fixed.zip`
 - Superseded source: `bitpod_brand_starter.zip` / `bitpod_brand_starter`
 
-Legacy mismatched files are retained only under `assets/brand/superseded/` for traceability.
+Legacy mismatched files are retained only under `brand/superseded/` for traceability.
 
 ## Governance
 
-- Source/ownership/status metadata: `assets/brand/asset-provenance.md`
-- Phase boundary/freeze note: `assets/brand/BRAND_FREEZE_PHASE1.md`
+- Source/ownership/status metadata: `brand/asset-provenance.md`
+- Phase boundary/freeze note: `brand/BRAND_FREEZE_PHASE1.md`

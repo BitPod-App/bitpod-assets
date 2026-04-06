@@ -30,15 +30,15 @@ asset_types:
     allowed_extensions: [mp4, mov, webm]
 
 folders:
-  root: assets/bitgals
-  protocol: assets/bitgals/protocol
-  shared_base: assets/bitgals/shared_base
+  root: bitgals
+  protocol: bitgals/protocol
+  shared_base: bitgals/shared_base
   personas:
-    taylor: assets/bitgals/taylor
-    ember: assets/bitgals/ember
-    kati: assets/bitgals/kati
-    shiva: assets/bitgals/shiva
-    vera: assets/bitgals/vera
+    taylor: bitgals/taylor
+    ember: bitgals/ember
+    kati: bitgals/kati
+    shiva: bitgals/shiva
+    vera: bitgals/vera
   subfolders: [refs, approved, conditional, rejected, avatars, videos, metadata]
 
 naming:

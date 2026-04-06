@@ -4,7 +4,7 @@ import json
 import shutil
 from pathlib import Path
 
-ROOT = Path("assets/bitgals")
+ROOT = Path("bitgals")
 PROTOCOL = ROOT / "protocol"
 PERSONAS = {"taylor", "ember", "kati", "shiva", "vera"}
 TYPES = {"avatar", "image", "video"}
