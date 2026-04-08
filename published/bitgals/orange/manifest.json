@@ -1,0 +1,12 @@
+{
+  "persona": "bitgal-orange",
+  "published_assets": [
+    {
+      "id": "bitgal-orange-headset",
+      "type": "avatar",
+      "path": "avatars/bitgal-orange-headset-square-v1.png",
+      "cloudflare_enabled": false,
+      "status": "published"
+    }
+  ]
+}

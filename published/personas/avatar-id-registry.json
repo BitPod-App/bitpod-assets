@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "owner": "BitPod published persona surfaces",
+  "public_url_pattern": "https://bitpod-avatar-worker.cjarguello.workers.dev/a/<public_id>",
+  "ids": [
+    {
+      "public_id": "taylor01-hq",
+      "persona_class": "Taylor01",
+      "display_name": "Taylor01 HQ",
+      "repo_asset": "published/personas/taylor01/avatars/taylor01-hq-headset-avatar-square-v2.png",
+      "worker_asset_path": "/__avatars/taylor01-hq.png",
+      "status": "live"
+    },
+    {
+      "public_id": "bitpod-mark",
+      "persona_class": "BrandMark",
+      "display_name": "BitPod Mark",
+      "repo_asset": "published/branding/marks/bitpod-app-logo-square-v1.png",
+      "status": "published_only"
+    }
+  ]
+}

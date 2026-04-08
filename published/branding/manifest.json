@@ -1,0 +1,11 @@
+{
+  "published_assets": [
+    {
+      "id": "bitpod-mark",
+      "type": "image",
+      "path": "marks/bitpod-app-logo-square-v1.png",
+      "cloudflare_enabled": false,
+      "status": "published"
+    }
+  ]
+}
