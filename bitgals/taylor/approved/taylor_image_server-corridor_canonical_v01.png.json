@@ -1,0 +1,43 @@
+{
+  "persona": "taylor",
+  "asset_type": "image",
+  "scene": "server-corridor",
+  "look": "canonical",
+  "source_model": null,
+  "base_identity_score": 98,
+  "persona_score": 97,
+  "confusion_score": 2,
+  "total_score": 96,
+  "decision": "approved",
+  "hard_fail_reasons": [],
+  "required_anchors_present": [
+    "cobalt_blue_hair",
+    "grey_blue_eyes",
+    "minimal_makeup",
+    "sleek_hair",
+    "single_ear_headset",
+    "black_suit",
+    "hq_or_white_futuristic_scene"
+  ],
+  "missing_required_anchors": [],
+  "forbidden_traits_detected": [],
+  "canonical_version": "Taylor01 v1.1",
+  "locked_date": "2026-05-03",
+  "locked_traits": [
+    "identity",
+    "face",
+    "expression",
+    "gaze",
+    "headset_placement",
+    "bitpod_logo_placement",
+    "royal_electric_blue_hair_direction",
+    "corridor_setting",
+    "camera_angle",
+    "matte_dark_technical_suit_direction"
+  ],
+  "accepted_tradeoffs": [
+    "suit remains slightly darker than ideal medium-dark charcoal, intentionally accepted to preserve identity stability and avoid drift."
+  ],
+  "future_edit_policy": "Surgical/local edits only. No global regeneration without explicit approval.",
+  "notes": "Taylor01 Canonical v1.1 - finalized Canonical A, artifact removed, upscaled. This PR approves the identity-canon BitGals asset only; publishing remains deferred. Identity, face, expression, gaze, headset placement, BitPod logo placement, royal/electric blue hair direction, corridor setting, camera angle, and matte dark technical suit direction are locked. Accepted tradeoff: suit remains slightly darker than ideal medium-dark charcoal, intentionally accepted to preserve identity stability and avoid drift. Surgical/local edits only. No global regeneration without explicit approval."
+}
