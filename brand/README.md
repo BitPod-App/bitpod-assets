@@ -7,6 +7,7 @@ This package replaces the earlier starter bundle that drifted too far from the r
 - SVG wrappers based on the real approved logo
 - square avatar variants
 - horizontal and vertical lockups
+- favicon packages for app surfaces
 - corrected guidelines and Figma notes
 
 ## Important

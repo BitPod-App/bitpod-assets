@@ -15,6 +15,7 @@ Status vocabulary used in this file:
 |---|---|---|---|---|---|---|
 | corrected logo SVG wrappers | `brand/logo/svg/*.svg` | `bitpod_brand_starter_fixed.zip` | BitPod App | pending formal policy | working | visually faithful to approved logo; not canonical vector master |
 | corrected logo PNG exports | `brand/logo/png/*.png` | `bitpod_brand_starter_fixed.zip` | BitPod App | pending formal policy | working | practical delivery assets for Phase 1 |
+| T01 Access Hub favicon package | `brand/favicons/t01-access-hub/` | `favicon_assets_T01_access_hub.zip` | BitPod App | pending formal policy | working | canonical favicon package; not Cloudflare-wrapped |
 | repo social preview cards | `brand/social/repo-previews/bitpod-tools-preview.png`, `brand/social/repo-previews/sector-feeds-preview.png` | local working file imports | BitPod App | pending formal policy | placeholder | operational org/profile previews |
 
 ## Superseded assets/source
