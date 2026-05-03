@@ -23,6 +23,26 @@ Do not collapse those into one approval system.
 `brand/` stays separate from both because org/brand assets are not persona
 media.
 
+## Taylor01 and T01 Agents Assets
+
+Keep Taylor01 and T01 Agents visual assets centralized in this repo unless an
+asset clearly belongs somewhere else. Runtime, mind, and T01 Agents repos should
+consume assets from here by using stable Cloudflare routes or by copying
+versioned runtime exports into their own deployment surfaces.
+
+Do not split Taylor01/T01 Agents visual assets into runtime-owned or mind-owned
+asset stores just because a consuming app needs them. A future org split can
+move these lanes later if Taylor01/T01 Agents become independently governed.
+
+Current placement rules:
+
+- App presentation assets such as favicons live under `brand/favicons/`.
+- Operational persona media such as live or preview avatars, stills, and GIFs
+  live under `published/personas/`.
+- Identity-canon and generation-guidance assets live under `bitgals/`.
+- Cloudflare workers in `cloudflare/` are delivery adapters for promoted
+  published assets, not general asset-authority folders.
+
 ## Import source and parity
 
 Current Phase 1 working source imported into `brand/` from:

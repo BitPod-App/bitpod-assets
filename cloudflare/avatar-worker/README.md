@@ -19,7 +19,8 @@ Preferred future custom-domain shape:
 ## Current behavior
 
 - validates `public_id` against the registry
-- serves a bundled Worker asset when `worker_asset_path` is present
+- serves a bundled Worker asset when `worker_asset_path` is present, including
+  explicitly promoted still or animated avatar assets
 - returns `404` for unknown IDs
 - returns `503` when an ID exists but has no bundled worker asset
 
@@ -29,6 +30,9 @@ This Worker intentionally serves a tiny stable subset of published persona
 avatars.
 
 It is not the front door to the full BitGals library.
+
+Animated avatar previews are allowed only when they are listed in
+`published/personas/avatar-id-registry.json` and copied into `public/__avatars/`.
 
 ## Local validation
 

@@ -12,6 +12,14 @@
       "status": "live"
     },
     {
+      "public_id": "taylor01-hq-animated",
+      "persona_class": "Taylor01",
+      "display_name": "Taylor01 HQ Animated",
+      "repo_asset": "published/personas/taylor01/animations/taylor01-hq-animated-avatar-v1.gif",
+      "worker_asset_path": "/__avatars/taylor01-hq-animated.gif",
+      "status": "preview"
+    },
+    {
       "public_id": "bitpod-mark",
       "persona_class": "BrandMark",
       "display_name": "BitPod Mark",

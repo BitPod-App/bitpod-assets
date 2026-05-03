@@ -14,6 +14,10 @@ This folder is intentionally separate from `bitgals/`.
 `bitgals/` is the identity-canon and review machine.
 `published/` is the live/hostable/use-now machine.
 
+Published persona assets may include still images, animated GIF previews, and
+other media formats when they are intended for direct product use. Promotion to
+Cloudflare delivery must be explicit in the relevant manifest and registry.
+
 ## Current top-level buckets
 
 - `branding/`

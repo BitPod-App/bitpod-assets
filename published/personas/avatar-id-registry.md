@@ -30,6 +30,7 @@ Examples:
 | public_id | class | current_repo_asset |
 | --- | --- | --- |
 | `taylor01-hq` | Taylor01 canonical public square avatar | `published/personas/taylor01/avatars/taylor01-hq-headset-avatar-square-v2.png` |
+| `taylor01-hq-animated` | Taylor01 animated square avatar preview | `published/personas/taylor01/animations/taylor01-hq-animated-avatar-v1.gif` |
 | `bitpod-mark` | BitPod published square mark | `published/branding/marks/bitpod-app-logo-square-v1.png` |
 
 ## Hosting rule
