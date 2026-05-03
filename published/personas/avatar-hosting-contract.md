@@ -35,6 +35,14 @@ Current source asset:
 
 - `published/personas/taylor01/avatars/taylor01-hq-headset-avatar-square-v2.png`
 
+Current Taylor01 animated preview ID:
+
+- `taylor01-hq-animated`
+
+Current animated preview source asset:
+
+- `published/personas/taylor01/animations/taylor01-hq-animated-avatar-v1.gif`
+
 Current published brand mark ID:
 
 - `bitpod-mark`
@@ -43,6 +51,10 @@ Current published brand mark ID:
 
 This hosting contract applies only to a small promoted subset of public persona
 avatars.
+
+Animated avatar previews may use the same route shape when they are explicitly
+listed in the registry and bundled by the worker. They are still promoted
+persona media, not the full BitGals library.
 
 It does not apply to:
 

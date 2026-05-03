@@ -49,6 +49,21 @@
       "path": "images/taylor01-hq-gal-portrait-v1.png",
       "cloudflare_enabled": false,
       "status": "published"
+    },
+    {
+      "id": "taylor01-hq-animated",
+      "type": "animation",
+      "path": "animations/taylor01-hq-animated-avatar-v1.gif",
+      "cloudflare_enabled": true,
+      "cloudflare_public_id": "taylor01-hq-animated",
+      "status": "preview",
+      "source_md5": "bb8143a0eed8401dfe8f2bc06a86a4e6",
+      "dimensions": {
+        "width": 99,
+        "height": 99
+      },
+      "duration_seconds": 6.46,
+      "frame_count": 34
     }
   ]
 }
