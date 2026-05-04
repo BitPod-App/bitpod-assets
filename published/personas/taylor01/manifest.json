@@ -57,7 +57,8 @@
       "cloudflare_enabled": true,
       "cloudflare_public_id": "taylor01-hq-animated",
       "status": "preview",
-      "source_md5": "bb8143a0eed8401dfe8f2bc06a86a4e6",
+      "source_md5": "5651078c4bc5ba7597d9273b18010008",
+      "loop_count": 1,
       "dimensions": {
         "width": 99,
         "height": 99
