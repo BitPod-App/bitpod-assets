@@ -4,9 +4,9 @@ Cloudflare Worker for serving stable public persona avatar routes.
 
 Canonical inputs:
 
-- `/Users/cjarguello/BitPod-App/bitpod-assets/published/personas/avatar-id-registry.md`
-- `/Users/cjarguello/BitPod-App/bitpod-assets/published/personas/avatar-id-registry.json`
-- `/Users/cjarguello/BitPod-App/bitpod-assets/published/personas/avatar-hosting-contract.md`
+- `/Users/taylor01/BitPod-App/bitpod-assets/published/personas/avatar-id-registry.md`
+- `/Users/taylor01/BitPod-App/bitpod-assets/published/personas/avatar-id-registry.json`
+- `/Users/taylor01/BitPod-App/bitpod-assets/published/personas/avatar-hosting-contract.md`
 
 ## Public URL shape
 
