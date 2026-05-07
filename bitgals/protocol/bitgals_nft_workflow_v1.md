@@ -35,11 +35,20 @@ Active canon lives under:
 bitgals/protocol/
 ```
 
-Primary files:
+Current active files:
 
 ```text
 bitgal_canon_minimal_v1.yaml
 bitgal_archetype_canon_v2.md
+persona_naming_migration_note_v1.md
+bitgals_nft_workflow_v1.md
+```
+
+Planned NFT packet and metadata files should also live under `bitgals/protocol/`
+until a future structure migration is explicitly approved. Expected future files
+may include:
+
+```text
 bitgal_canon_v2.machine.json
 opensea_metadata_template.bitgals.v1.json
 opensea_metadata_template.bitgals.v2.json
@@ -75,7 +84,7 @@ CJ controls the base identity and final acceptance.
 
 ## GPT / OpenAI
 
-GPT/OpenAI owns:
+GPT/OpenAI-assisted work supports:
 - canon organization
 - anti-drift governance
 - canonical image conversion from approved base images
@@ -88,7 +97,7 @@ OpenAI image generation is used to convert approved MoodAI base images into one 
 
 ## Grok / SuperGrok
 
-Grok owns the downstream NFT packaging layer after canonical images are approved.
+Grok/SuperGrok is the downstream NFT packaging assistant after canonical images are approved.
 
 Grok may produce:
 - OpenSea JSON

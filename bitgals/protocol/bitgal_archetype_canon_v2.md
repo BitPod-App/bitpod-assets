@@ -309,7 +309,7 @@ Kate must not collapse into:
 - messy mechanic stereotype
 - sound engineer only
 - DJ girl
-- incomprehensible tech goblin
+- incomprehensible tech caricature
 
 Her brittleness must feel intentional, not incompetent.
 
