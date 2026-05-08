@@ -3,8 +3,14 @@ import argparse
 import re
 from pathlib import Path
 
-ROOT = Path("bitgals")
-PERSONAS = {"taylor", "ember", "kati", "shiva", "vera"}
+ROOTS = (Path("bitgals"), Path("assets/bitgals"))
+PERSONAS = {"taylor", "ember", "kate", "shiva", "vera"}
+LEGACY_PERSONAS = {"kati"}
+ALL_PERSONAS = PERSONAS | LEGACY_PERSONAS
+KATI_LEGACY_WARNING = (
+    "Legacy persona alias: kati is accepted for existing v1 assets only; "
+    "new intake should use kate."
+)
 TYPES = {"avatar", "image", "video"}
 EXTS = {
     "avatar": {"png", "jpg", "jpeg", "webp"},
@@ -18,39 +24,48 @@ FOLDER_TO_TYPE = {
 IMAGE_FOLDERS = {"approved", "conditional", "rejected", "refs"}
 ALL_FOLDERS = {"refs", "approved", "conditional", "rejected", "avatars", "videos", "metadata"}
 PATTERN = re.compile(
-    r"^(?P<persona>taylor|ember|kati|shiva|vera)_(?P<asset_type>avatar|image|video)_(?P<scene>[a-z0-9-]+)_(?P<look>[a-z0-9-]+)_v(?P<version>\d{2})\.(?P<ext>png|jpg|jpeg|webp|mp4|mov|webm)$"
+    r"^(?P<persona>taylor|ember|kate|kati|shiva|vera)_(?P<asset_type>avatar|image|video)_(?P<scene>[a-z0-9-]+)_(?P<look>[a-z0-9-]+)_v(?P<version>\d{2})\.(?P<ext>png|jpg|jpeg|webp|mp4|mov|webm)$"
 )
 
 
-def validate(path: Path) -> list[str]:
+def validate(path: Path) -> tuple[list[str], list[str]]:
     errors: list[str] = []
+    warnings: list[str] = []
     match = PATTERN.match(path.name)
     if not match:
-        return [f"Invalid BitGals filename: {path.name}"]
+        return [f"Invalid BitGals filename: {path.name}"], warnings
 
     persona = match.group("persona")
     asset_type = match.group("asset_type")
     ext = match.group("ext")
 
-    if persona not in PERSONAS:
+    if persona not in ALL_PERSONAS:
         errors.append(f"Invalid persona in filename: {persona}")
+    elif persona == "kati":
+        warnings.append(KATI_LEGACY_WARNING)
     if asset_type not in TYPES:
         errors.append(f"Invalid asset type in filename: {asset_type}")
     if ext not in EXTS[asset_type]:
         errors.append(f"Extension .{ext} is not allowed for type {asset_type}")
 
-    try:
-        relative = path.relative_to(ROOT)
-    except ValueError:
-        return errors
+    relative = None
+    for candidate_root in ROOTS:
+        try:
+            relative = path.relative_to(candidate_root)
+            break
+        except ValueError:
+            continue
+    if relative is None:
+        return errors, warnings
 
     parts = relative.parts
     if len(parts) < 3:
-        errors.append("BitGals asset paths must be under bitgals/{persona}/{category}/")
-        return errors
+        allowed_roots = " or ".join(f"{item}/{{persona}}/{{category}}/" for item in ROOTS)
+        errors.append(f"BitGals asset paths must be under {allowed_roots}")
+        return errors, warnings
 
     folder_persona, category = parts[0], parts[1]
-    if folder_persona not in PERSONAS:
+    if folder_persona not in ALL_PERSONAS:
         errors.append(f"Invalid persona folder: {folder_persona}")
     if category not in ALL_FOLDERS:
         errors.append(f"Invalid BitGals category folder: {category}")
@@ -70,7 +85,7 @@ def validate(path: Path) -> list[str]:
     if category == "metadata":
         errors.append("Metadata files should be validated by their asset filename, not from metadata/ directly")
 
-    return errors
+    return errors, warnings
 
 
 def main() -> None:
@@ -79,7 +94,7 @@ def main() -> None:
     args = parser.parse_args()
 
     path = Path(args.path)
-    errors = validate(path)
+    errors, warnings = validate(path)
     if errors:
         print(f"FAIL: {path}")
         for error in errors:
@@ -90,7 +105,9 @@ def main() -> None:
     print("- Filename matches BitGals naming rules")
     print("- Persona and type are valid")
     print("- Extension is compatible with asset type")
-    if path.is_relative_to(ROOT):
+    for warning in warnings:
+        print(f"- {warning}")
+    if any(path.is_relative_to(root) for root in ROOTS):
         print("- Folder category is compatible with this asset")
 
 

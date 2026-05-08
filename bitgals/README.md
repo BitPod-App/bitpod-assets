@@ -14,9 +14,15 @@ The goal is simple:
 ## Personas
 - `taylor` — chief of staff, symmetry, white HQ, cobalt hair
 - `ember` — performer/creator, motion, orange hair, stage energy
-- `kati` — sound engineer/DJ/repair, texture, green-turquoise hair, purple eyes, gold-heavy styling
-- `shiva` — dark narrator, lighting, short purple hair, silver styling
-- `vera` — QA engineer, structure, brunette, glasses, tech-office scenes
+- `kate` — infrastructure systems lead, technical motion, yellow hair, lab/infrastructure systems
+- `shiva` — core security architect, cinematic darkness, sovereign custody/security depth
+- `vera` — verification systems lead, structure, glasses, terminal/server/QA scenes
+
+Compatibility:
+- `kati` is a legacy v1 alias for `kate`.
+- new v2 assets should use `kate`.
+- old `kati` folders/assets remain until a dedicated migration is explicitly approved.
+- Validator tooling accepts `kati` for existing legacy assets, but new intake normalizes to `kate`.
 
 ## Canon files
 - `protocol/bitgal_canon_minimal_v1.yaml` — machine-readable canon and thresholds
@@ -24,6 +30,8 @@ The goal is simple:
 - `protocol/review_checklist.md` — fast human review
 - `protocol/naming_rules.md` — naming and filing rules
 - `protocol/codex_handoff.md` — implementation brief for Codex
+- `protocol/bitgal_archetype_canon_v2.md` — v2 archetype canon
+- `protocol/persona_naming_migration_note_v1.md` — public BitGals vs internal persona terminology split
 
 ## Folder intent
 - `shared_base/` — anchor images of the base woman
@@ -85,4 +93,5 @@ Validate a BitGals filename or asset path:
 ```bash
 python3 scripts/bitgals_validate.py bitgals/ember/approved/ember_image_stage_singing_v01.png
 python3 scripts/bitgals_validate.py bitgals/taylor/avatars/taylor_avatar_hq_black-suit_v01.png
+python3 scripts/bitgals_validate.py bitgals/kate/approved/kate_image_lab_relay_v01.png
 ```
