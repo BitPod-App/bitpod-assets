@@ -31,14 +31,17 @@ asset_types:
 
 folders:
   root: bitgals
+  legacy_root: assets/bitgals
   protocol: bitgals/protocol
   shared_base: bitgals/shared_base
   personas:
     taylor: bitgals/taylor
     ember: bitgals/ember
-    kati: bitgals/kati
+    kate: bitgals/kate
     shiva: bitgals/shiva
     vera: bitgals/vera
+  legacy_personas:
+    kati: bitgals/kati
   subfolders: [refs, approved, conditional, rejected, avatars, videos, metadata]
 
 naming:
@@ -86,52 +89,61 @@ personas:
       - sterile_hq_scene
       - flat_expression
       - minimal_audio_gear
-  kati:
-    role: sound_engineer_dj_repair
-    dominant_signal: texture
+  kate:
+    role: infrastructure_systems_lead
+    dominant_signal: technical_motion
     required:
-      - pale_green_turquoise_hair
-      - purple_eyes
-      - heavy_makeup
-      - gold_jewelry
-      - dark_brows
-      - studio_or_backstage_or_repair_scene
+      - electric_yellow_or_pale_yellow_hair
+      - bright_blue_eyes
+      - white_technical_clothing
+      - utility_belt_or_high_end_gadgets
+      - microchip_or_electrical_wire_tools
+      - watch_comms_or_node_infrastructure_cue
+      - office_lab_or_infrastructure_scene
     preferred:
-      - blockchain_neck_tattoo
-      - black_purple_leather
-      - bitcoin_jewelry
-      - tools_or_wires
+      - barefoot_or_health_obsessed_cue
+      - fitness_or_biological_data_cue
+      - signal_routing_or_repair_context
+      - layer_2_or_node_operations_cue
     forbidden:
-      - minimalist_clean_look
-      - no_jewelry
-      - corporate_office_scene
+      - generic_cyberpunk_hacker_girl
+      - messy_mechanic_stereotype
+      - sound_engineer_only
+      - dj_girl_identity_collapse
+  kati:
+    role: legacy_alias_for_kate
+    canonical_persona: kate
+    status: legacy_v1_alias
+    note: "Do not use for new v2 intake. Normalize new assets to kate."
   shiva:
-    role: dark_narrator
+    role: core_security_architect
     dominant_signal: lighting
     required:
-      - short_purple_hair
-      - darker_skin_presentation
-      - black_eyes
-      - hot_pink_lipstick
-      - silver_accessories
-      - glossy_black_suit
-      - cinematic_night_scene
+      - indian_descent
+      - dark_brown_hair_with_purple_or_violet_strands
+      - short_bob_cut
+      - orange_forehead_dot_or_third_eye_mark
+      - amber_eyes
+      - cinematic_darkness
+      - massive_office_or_underground_security_implication
     forbidden:
-      - gold_jewelry
-      - repair_tools
-      - executive_hq_symmetry
+      - generic_goth_cyber_girl
+      - villain_read
+      - decorative_exoticism
       - large_headphones
   vera:
-    role: qa_engineer
+    role: verification_systems_lead
     dominant_signal: structure
     required:
-      - brunette_hair
-      - light_green_eyes
+      - short_pale_green_or_practical_brunette_hair
+      - light_green_or_grey_green_eyes
       - glasses
-      - executive_tech_clothing
-      - office_or_server_or_terminal_scene
+      - practical_dark_executive_tech_clothing
+      - terminal_server_or_qa_war_room_scene
+      - logs_diffs_failed_tests_or_dashboard_cue
     forbidden:
       - nightclub_scene
       - flashy_jewelry
       - heavy_makeup
       - influencer_pose
+      - passive_compliance_person_read

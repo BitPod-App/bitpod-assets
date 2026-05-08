@@ -6,9 +6,14 @@
 ## Allowed persona values
 - `taylor`
 - `ember`
-- `kati`
+- `kate`
 - `shiva`
 - `vera`
+
+Legacy compatibility:
+- `kati` is a v1 legacy alias for `kate`
+- new v2 intake should use `kate`
+- existing `kati` assets may remain in place until an explicit migration is approved
 
 ## Allowed type values
 - `avatar`
@@ -18,7 +23,7 @@
 ## Examples
 - `taylor_avatar_hq_black-suit_v01.png`
 - `ember_video_stage_singing_v02.mp4`
-- `kati_image_studio_gold-heavy_v03.jpg`
+- `kate_image_lab_relay_v03.jpg`
 - `shiva_avatar_night_gloss-black_v01.webp`
 - `vera_image_serverroom_glasses_v01.png`
 
@@ -34,5 +39,5 @@ Use a sidecar JSON with the same filename plus `.json` next to the asset by defa
 Leave `metadata/` folders unused in v1 unless a later workflow explicitly requests them.
 
 Example:
-- `kati_avatar_studio_gold-heavy_v01.png`
-- `kati_avatar_studio_gold-heavy_v01.png.json`
+- `kate_avatar_lab_relay_v01.png`
+- `kate_avatar_lab_relay_v01.png.json`

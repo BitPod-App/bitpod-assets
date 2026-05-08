@@ -2,7 +2,8 @@
 from pathlib import Path
 
 ROOT = Path("bitgals")
-PERSONAS = ["taylor", "ember", "kati", "shiva", "vera"]
+PERSONAS = ["taylor", "ember", "kate", "shiva", "vera"]
+LEGACY_PERSONAS = ["kati"]
 SUBFOLDERS = ["refs", "approved", "conditional", "rejected", "avatars", "videos", "metadata"]
 
 
@@ -23,7 +24,7 @@ def main() -> None:
         total += 1
         created += int(ensure(path))
 
-    for persona in PERSONAS:
+    for persona in PERSONAS + LEGACY_PERSONAS:
         for subfolder in SUBFOLDERS:
             total += 1
             created += int(ensure(ROOT / persona / subfolder))

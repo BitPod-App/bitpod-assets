@@ -6,7 +6,8 @@ from pathlib import Path
 
 ROOT = Path("bitgals")
 PROTOCOL = ROOT / "protocol"
-PERSONAS = {"taylor", "ember", "kati", "shiva", "vera"}
+PERSONAS = {"taylor", "ember", "kate", "shiva", "vera"}
+PERSONA_ALIASES = {"kati": "kate"}
 TYPES = {"avatar", "image", "video"}
 DECISIONS = {"approved", "conditional", "rejected"}
 EXTS = {
@@ -65,6 +66,8 @@ def main() -> None:
     scene = normalize(args.scene)
     look = normalize(args.look)
     decision = normalize(args.decision)
+
+    persona = PERSONA_ALIASES.get(persona, persona)
 
     if persona not in PERSONAS:
         raise SystemExit(f"Invalid persona: {persona}")

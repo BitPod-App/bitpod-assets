@@ -217,7 +217,7 @@ If overlap emerges, the other persona should be revised.
 
 # Kate ₿
 
-> Rename note: existing repository canon may still use `kati`. Current archetype direction favors `Kate ₿` publicly, with migration to be handled carefully if approved.
+> Rename note: v2 canon uses `Kate ₿` publicly and `kate` for new operational intake. Existing `kati` material is treated as a v1 legacy alias and should not be used for new v2 assets.
 
 ## Public Title
 Infrastructure Systems Lead.

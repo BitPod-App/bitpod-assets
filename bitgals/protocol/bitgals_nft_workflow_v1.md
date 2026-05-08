@@ -38,10 +38,12 @@ bitgals/protocol/
 Current active files:
 
 ```text
-bitgal_canon_minimal_v1.yaml
-bitgal_archetype_canon_v2.md
-persona_naming_migration_note_v1.md
-bitgals_nft_workflow_v1.md
+bitgals/protocol/bitgal_canon_minimal_v1.yaml
+bitgals/protocol/naming_rules.md
+bitgals/protocol/review_checklist.md
+bitgals/protocol/bitgal_archetype_canon_v2.md
+bitgals/protocol/persona_naming_migration_note_v1.md
+bitgals/protocol/bitgals_nft_workflow_v1.md
 ```
 
 Planned NFT packet and metadata files should also live under `bitgals/protocol/`

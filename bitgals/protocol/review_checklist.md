@@ -6,7 +6,11 @@ Use this fast checklist before an asset enters the official library.
 - Yes / No
 
 ## 2. Right persona read?
-- Taylor / Ember / Kati / Shiva / Vera / Wrong
+- Taylor / Ember / Kate / Shiva / Vera / Wrong
+
+Compatibility note:
+- `kati` is a v1 legacy alias for Kate.
+- New v2 review and intake should use `kate`.
 
 ## 3. Required anchors present?
 - Check against `bitgal_canon_minimal_v1.yaml`
@@ -15,7 +19,7 @@ Use this fast checklist before an asset enters the official library.
 - If yes, usually fail
 
 ## 5. Scene fit correct?
-- HQ / stage / studio / night / office-tech / other
+- HQ / stage / lab-infrastructure / night-security / office-tech-QA / other
 
 ## 6. Quick score
 - Base identity: /100

@@ -64,6 +64,13 @@ Recommended incremental migration:
 4. Reserve `BitGals` wording for NFT collection surfaces.
 5. Later evaluate whether repo folders should migrate from `bitgals/` to a more generic parent.
 
+Operational v2 bridge:
+
+- `kate` is the canonical v2 intake slug.
+- `kati` is a v1 legacy alias for compatibility with existing folders/assets only.
+- new assets should not deepen the `kati` path.
+- scripts may accept `kati` as input only to normalize new intake toward `kate`.
+
 ## Future Structure Candidate
 
 ```text
