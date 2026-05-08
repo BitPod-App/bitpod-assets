@@ -56,13 +56,13 @@ def validate(path: Path) -> tuple[list[str], list[str]]:
         except ValueError:
             continue
     if relative is None:
-        return errors
+        return errors, warnings
 
     parts = relative.parts
     if len(parts) < 3:
         allowed_roots = " or ".join(f"{item}/{{persona}}/{{category}}/" for item in ROOTS)
         errors.append(f"BitGals asset paths must be under {allowed_roots}")
-        return errors
+        return errors, warnings
 
     folder_persona, category = parts[0], parts[1]
     if folder_persona not in ALL_PERSONAS:
