@@ -12,8 +12,12 @@
 
 Legacy compatibility:
 - `kati` is a v1 legacy alias for `kate`
-- new v2 intake should use `kate`
+- Intake and file naming for new assets should use `kate`
 - existing `kati` assets may remain in place until an explicit migration is approved
+
+Compatibility contract note:
+- Validation tooling accepts `kati` for legacy compatibility.
+- New-v2 intake is explicitly v2-only and should normalize to `kate` using scripts.
 
 ## Allowed type values
 - `avatar`

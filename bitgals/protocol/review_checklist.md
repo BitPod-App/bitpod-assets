@@ -11,6 +11,7 @@ Use this fast checklist before an asset enters the official library.
 Compatibility note:
 - `kati` is a v1 legacy alias for Kate.
 - New v2 review and intake should use `kate`.
+- Validator acceptance of `kati` is intentional legacy compatibility only; it is not new intake policy.
 
 ## 3. Required anchors present?
 - Check against `bitgal_canon_minimal_v1.yaml`

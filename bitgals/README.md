@@ -22,6 +22,7 @@ Compatibility:
 - `kati` is a legacy v1 alias for `kate`.
 - new v2 assets should use `kate`.
 - old `kati` folders/assets remain until a dedicated migration is explicitly approved.
+- Validator tooling accepts `kati` for existing legacy assets, but new intake normalizes to `kate`.
 
 ## Canon files
 - `protocol/bitgal_canon_minimal_v1.yaml` — machine-readable canon and thresholds

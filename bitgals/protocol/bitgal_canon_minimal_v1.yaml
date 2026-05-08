@@ -110,11 +110,6 @@ personas:
       - messy_mechanic_stereotype
       - sound_engineer_only
       - dj_girl_identity_collapse
-  kati:
-    role: legacy_alias_for_kate
-    canonical_persona: kate
-    status: legacy_v1_alias
-    note: "Do not use for new v2 intake. Normalize new assets to kate."
   shiva:
     role: core_security_architect
     dominant_signal: lighting
@@ -147,3 +142,9 @@ personas:
       - heavy_makeup
       - influencer_pose
       - passive_compliance_person_read
+
+legacy_aliases:
+  kati:
+    canonical_persona: kate
+    status: legacy_v1_alias
+    note: "Do not use for new v2 intake. Intake should normalize to kate."

@@ -1,6 +1,6 @@
-# Codex Handoff — BitGals v1
+# Codex Handoff — BitGals v2 bridge (with v1 compatibility)
 
-Implement a minimal ingestion system for `bitgals/`.
+Implement a minimal ingestion system for `bitgals/` with active v2 personas and v1 compatibility preserved only for legacy aliases.
 
 ## Goal
 Do not build a giant platform.
@@ -11,14 +11,15 @@ Build a small helper system that:
 4. routes assets into `avatars/`, `approved/`, `conditional/`, `rejected/`, or `videos/`
 5. supports a manual human score and decision flow
 
-Validation rules for v1:
+Validation rules for v2 (with v1 compatibility):
 - `refs/` accepts still-image reference assets of type `image` and `avatar`
 - `refs/` does not accept `video`
 - metadata sidecars live next to each asset by default
 - `metadata/` folders stay in the scaffold but are not a default intake destination
+- `kati` is accepted only as a v1 legacy alias for existing legacy assets
 
 ## Required folders
-For each persona (`taylor`, `ember`, `kati`, `shiva`, `vera`) create:
+For each active persona (`taylor`, `ember`, `kate`, `shiva`, `vera`) create:
 - `refs/`
 - `approved/`
 - `conditional/`
@@ -26,6 +27,11 @@ For each persona (`taylor`, `ember`, `kati`, `shiva`, `vera`) create:
 - `avatars/`
 - `videos/`
 - `metadata/`
+
+Compatibility bridge:
+- `kati` is a legacy alias for `kate`.
+- New intake should use `kate` and target the `kate` folder.
+- Legacy scripts may accept `kati` inputs and normalize to `kate` for existing v1 assets only.
 
 Also create:
 - `bitgals/shared_base/`

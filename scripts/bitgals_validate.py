@@ -7,6 +7,10 @@ ROOTS = (Path("bitgals"), Path("assets/bitgals"))
 PERSONAS = {"taylor", "ember", "kate", "shiva", "vera"}
 LEGACY_PERSONAS = {"kati"}
 ALL_PERSONAS = PERSONAS | LEGACY_PERSONAS
+KATI_LEGACY_WARNING = (
+    "Legacy persona alias: kati is accepted for existing v1 assets only; "
+    "new intake should use kate."
+)
 TYPES = {"avatar", "image", "video"}
 EXTS = {
     "avatar": {"png", "jpg", "jpeg", "webp"},
@@ -24,11 +28,12 @@ PATTERN = re.compile(
 )
 
 
-def validate(path: Path) -> list[str]:
+def validate(path: Path) -> tuple[list[str], list[str]]:
     errors: list[str] = []
+    warnings: list[str] = []
     match = PATTERN.match(path.name)
     if not match:
-        return [f"Invalid BitGals filename: {path.name}"]
+        return [f"Invalid BitGals filename: {path.name}"], warnings
 
     persona = match.group("persona")
     asset_type = match.group("asset_type")
@@ -36,6 +41,8 @@ def validate(path: Path) -> list[str]:
 
     if persona not in ALL_PERSONAS:
         errors.append(f"Invalid persona in filename: {persona}")
+    elif persona == "kati":
+        warnings.append(KATI_LEGACY_WARNING)
     if asset_type not in TYPES:
         errors.append(f"Invalid asset type in filename: {asset_type}")
     if ext not in EXTS[asset_type]:
@@ -78,7 +85,7 @@ def validate(path: Path) -> list[str]:
     if category == "metadata":
         errors.append("Metadata files should be validated by their asset filename, not from metadata/ directly")
 
-    return errors
+    return errors, warnings
 
 
 def main() -> None:
@@ -87,7 +94,7 @@ def main() -> None:
     args = parser.parse_args()
 
     path = Path(args.path)
-    errors = validate(path)
+    errors, warnings = validate(path)
     if errors:
         print(f"FAIL: {path}")
         for error in errors:
@@ -98,6 +105,8 @@ def main() -> None:
     print("- Filename matches BitGals naming rules")
     print("- Persona and type are valid")
     print("- Extension is compatible with asset type")
+    for warning in warnings:
+        print(f"- {warning}")
     if any(path.is_relative_to(root) for root in ROOTS):
         print("- Folder category is compatible with this asset")
 
