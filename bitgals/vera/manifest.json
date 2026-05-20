@@ -1,0 +1,66 @@
+{
+  "persona": "vera",
+  "status": "pending PR/QA review; not approved visual canon",
+  "source_of_truth": "BIT-485 Linear comment attachments for provenance only",
+  "linear_issue": "BIT-485",
+  "linear_issue_url": "https://linear.app/bitpod-app/issue/BIT-485/cipf-v1-formalize-cinematic-identity-persistence-framework-for-bitgals",
+  "comment_id": "5faee59e-0a19-4d6a-9603-963108d79cf8",
+  "updated_at": "2026-05-20T01:59:20Z",
+  "canon_context": "Vera ₿ cyan-charcoal era; CIPF_v1 primary proven test case.",
+  "qa_gate": {
+    "required": true,
+    "current_state": "structurally imported as refs candidates only",
+    "not_yet_approved_for": [
+      "approved/",
+      "avatars/",
+      "published assets"
+    ],
+    "promotion_rule": "A PR and qualitative BitGals/Vera QA must approve each image destination before promotion."
+  },
+  "assets": [
+    {
+      "path": "bitgals/vera/refs/vera_image_dark-cyan_bit485-candidate_v01.png",
+      "original_filename": "dark cyan vera.png",
+      "role": "pending-review candidate reference",
+      "sha256": "e3d244d05c2327b9d051ecc9cc5a7c47db3ff8dca8c856a3810a4f533b3b379a",
+      "dimensions_px": {
+        "width": 1254,
+        "height": 1254
+      },
+      "metadata": "bitgals/vera/refs/vera_image_dark-cyan_bit485-candidate_v01.png.json"
+    },
+    {
+      "path": "bitgals/vera/refs/vera_image_cyan-charcoal_good-avatar-candidate_v01.png",
+      "original_filename": "vera good avatar.png",
+      "role": "pending-review candidate reference",
+      "sha256": "b0d256935477fbcc8063122e2652e13dcc3e2020605d63eb056b2765a0a3b312",
+      "dimensions_px": {
+        "width": 1122,
+        "height": 1402
+      },
+      "metadata": "bitgals/vera/refs/vera_image_cyan-charcoal_good-avatar-candidate_v01.png.json"
+    },
+    {
+      "path": "bitgals/vera/refs/vera_image_outdoor-profile_bit485-candidate_v01.png",
+      "original_filename": "profile vera outside.png",
+      "role": "pending-review candidate reference",
+      "sha256": "ba5ec9934809dd4a5305560ed2b8b93818852f52765e2c58301ac1f63be2326d",
+      "dimensions_px": {
+        "width": 1023,
+        "height": 1537
+      },
+      "metadata": "bitgals/vera/refs/vera_image_outdoor-profile_bit485-candidate_v01.png.json"
+    },
+    {
+      "path": "bitgals/vera/refs/vera_image_high-tech_bit485-candidate_v01.png",
+      "original_filename": "vera ht1.png",
+      "role": "pending-review candidate reference",
+      "sha256": "c1cf8d6c9fb4781368405ace7025be3063ac69a47cb257ce9ee44dc08be9709c",
+      "dimensions_px": {
+        "width": 1023,
+        "height": 1537
+      },
+      "metadata": "bitgals/vera/refs/vera_image_high-tech_bit485-candidate_v01.png.json"
+    }
+  ]
+}

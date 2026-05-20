@@ -16,7 +16,7 @@ The goal is simple:
 - `ember` — performer/creator, motion, orange hair, stage energy
 - `kate` — infrastructure systems lead, technical motion, yellow hair, lab/infrastructure systems
 - `shiva` — core security architect, cinematic darkness, sovereign custody/security depth
-- `vera` — verification systems lead, structure, glasses, terminal/server/QA scenes
+- `vera` — verification systems lead, structure, glasses, terminal/server/QA scenes; BIT-485 Vera ₿ cyan-charcoal candidates are indexed in `vera/manifest.json` and require PR/QA approval before promotion to approved canon
 
 Compatibility:
 - `kati` is a legacy v1 alias for `kate`.
@@ -32,6 +32,7 @@ Compatibility:
 - `protocol/codex_handoff.md` — implementation brief for Codex
 - `protocol/bitgal_archetype_canon_v2.md` — v2 archetype canon
 - `protocol/persona_naming_migration_note_v1.md` — public BitGals vs internal persona terminology split
+- `canon/CIPF_v1.md` — Cinematic Identity Persistence Framework; Vera ₿ is the primary proven test case
 
 ## Folder intent
 - `shared_base/` — anchor images of the base woman
@@ -42,6 +43,7 @@ Compatibility:
 - `{persona}/avatars/` — square avatar-ready stills
 - `{persona}/videos/` — approved video files
 - `{persona}/metadata/` — reserved for future use; sidecar JSON lives next to each asset by default in v1
+- `{persona}/manifest.json` — persona-level index when canonical imports need provenance and discoverability
 
 ## Review policy
 - Official pass: total >= 90
