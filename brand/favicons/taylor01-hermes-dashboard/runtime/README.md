@@ -1,24 +1,35 @@
-# Taylor01 Hermes Dashboard Favicon Pack
+# Taylor01 SVG Gradient Canonical Favicon Pack
 
-Generated from the custom Taylor01 Hermes Dashboard favicon artwork.
+This pack uses the gradient `favicon.svg` from the earlier Taylor01 gradient pack as the active visual source.
 
-## Included
+Important note: this is a standalone SVG file, but it is an SVG wrapper containing an embedded rendered PNG, not a fully editable vector-path reconstruction. That is still acceptable for favicon deployment because browsers ultimately use rasterized icon sizes for most favicon contexts.
 
-- favicon.ico
-- favicon-16x16.png
-- favicon-32x32.png
-- favicon-48x48.png
-- favicon-64x64.png
-- favicon-96x96.png
-- favicon-128x128.png
-- apple-touch-icon.png
-- android-chrome-192x192.png
-- android-chrome-512x512.png
-- site.webmanifest
-- html-head-snippet.txt
+## Active style
 
-## Usage
+- White background
+- Taylor01 electric-blue/cyan/indigo hair treatment
+- One visual style only
+- No single-blue/original-color alternates included
 
-Place the files at your web root or public asset directory, then copy the contents of `html-head-snippet.txt` into the HTML `<head>`.
+## Files
 
-Theme color: #005DFF
+- `favicon.svg`
+- `favicon.ico`
+- `favicon-16x16.png`
+- `favicon-32x32.png`
+- `favicon-48x48.png`
+- `favicon-64x64.png`
+- `favicon-96x96.png`
+- `favicon-128x128.png`
+- `favicon-256x256.png`
+- `apple-touch-icon.png`
+- `android-chrome-192x192.png`
+- `android-chrome-512x512.png`
+- `site.webmanifest`
+- `html-head-snippet.txt`
+- `favicon-source-gradient-1024.png`
+- `preview-contact-sheet.png`
+
+## Suggested usage
+
+Copy the active favicon files into your public/static root and paste the contents of `html-head-snippet.txt` into your HTML `<head>`.
