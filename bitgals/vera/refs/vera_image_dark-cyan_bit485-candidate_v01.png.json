@@ -1,0 +1,39 @@
+{
+  "persona": "vera",
+  "asset_type": "image",
+  "scene": "dark-cyan",
+  "look": "bit485-candidate",
+  "source_model": null,
+  "base_identity_score": null,
+  "persona_score": null,
+  "confusion_score": null,
+  "total_score": null,
+  "decision": "pending_qa",
+  "hard_fail_reasons": [],
+  "required_anchors_present": [],
+  "missing_required_anchors": [],
+  "forbidden_traits_detected": [],
+  "notes": "Candidate Vera cyan-charcoal canon image from BIT-485; pending PR/QA placement approval.",
+  "qa_gate": {
+    "status": "pending_pr_qa",
+    "structural_validation_only": true,
+    "canon_or_avatar_approval": false,
+    "promotion_rule": "Do not move to approved/ or avatars/ until PR review and qualitative BitGals/Vera QA explicitly approve placement."
+  },
+  "provenance": {
+    "linear_issue": "BIT-485",
+    "linear_issue_url": "https://linear.app/bitpod-app/issue/BIT-485/cipf-v1-formalize-cinematic-identity-persistence-framework-for-bitgals",
+    "linear_comment_id": "5faee59e-0a19-4d6a-9603-963108d79cf8",
+    "linear_comment_created_at": "2026-05-17T06:10:28.994Z",
+    "related_pr": "https://github.com/BitPod-App/bitpod-assets/pull/16",
+    "updated_at": "2026-05-20T01:59:20Z",
+    "source_of_truth": "Linear BIT-485 issue comment attachment",
+    "original_filename": "dark cyan vera.png",
+    "imported_from": "Linear signed upload URL; transient URL intentionally not retained",
+    "sha256": "e3d244d05c2327b9d051ecc9cc5a7c47db3ff8dca8c856a3810a4f533b3b379a",
+    "dimensions_px": {
+      "width": 1254,
+      "height": 1254
+    }
+  }
+}
