@@ -6,6 +6,53 @@
       "path": "marks/bitpod-app-logo-square-v1.png",
       "cloudflare_enabled": false,
       "status": "published"
+    },
+    {
+      "id": "taylor01-hermes-dashboard-favicons",
+      "type": "favicon-package",
+      "path": "../../brand/favicons/taylor01-hermes-dashboard/runtime/",
+      "source_package": "../../brand/favicons/taylor01-hermes-dashboard/",
+      "delivery": "copy-runtime-files-same-origin",
+      "cloudflare_enabled": false,
+      "status": "published",
+      "runtime_exports": [
+        "favicon.svg",
+        "favicon.ico",
+        "favicon-16x16.png",
+        "favicon-32x32.png",
+        "favicon-48x48.png",
+        "favicon-64x64.png",
+        "favicon-96x96.png",
+        "favicon-128x128.png",
+        "favicon-256x256.png",
+        "apple-touch-icon.png",
+        "android-chrome-192x192.png",
+        "android-chrome-512x512.png",
+        "site.webmanifest",
+        "html-head-snippet.txt"
+      ]
+    }
+  ],
+  "retired_assets": [
+    {
+      "id": "t01-access-hub-favicons",
+      "type": "favicon-package",
+      "path": "../../brand/favicons/t01-access-hub/runtime/",
+      "source_package": "../../brand/favicons/t01-access-hub/",
+      "delivery": "copy-runtime-files-same-origin",
+      "cloudflare_enabled": false,
+      "status": "retired",
+      "retired_on": "2026-06-05",
+      "replaced_by": "taylor01-hermes-dashboard-favicons",
+      "runtime_exports": [
+        "favicon.ico",
+        "favicon.svg",
+        "favicon-32.png",
+        "favicon.png",
+        "apple-touch-icon.png",
+        "icon-192.png",
+        "icon-512.png"
+      ]
     }
   ]
 }
