@@ -72,6 +72,21 @@ Operational v2 bridge:
 - scripts may accept `kati` as input only to normalize legacy intake toward `kate`.
 - validation tools may still pass existing `kati` filenames for migration compatibility.
 
+Ashina persona bridge (BIT-715, mirrors the `kate`/`kati` pattern — no destructive rename):
+
+- `ashina` is the canonical persona slug (formal name), matching the Shiva -> Ashina
+  rename already landed in `taylor01-mind` (PR #75 / BIT-688). `Asha` is the living
+  name used inside card copy, not a folder slug.
+- `shiva` is a v1 legacy alias, kept only for existing folder/asset compatibility.
+- new assets should land under `bitgals/ashina/` and not deepen the `bitgals/shiva/` path.
+- the empty `bitgals/shiva/` scaffold is left in place on purpose; per this note's
+  "do not perform a broad destructive rename without explicit review" rule, retiring or
+  merging that scaffold into `bitgals/ashina/` is a separate, review-gated cleanup —
+  not part of BIT-715.
+- canon files that still list `shiva` (`bitgal_canon_minimal_v1.yaml`, `naming_rules.md`)
+  are intentionally not edited here; updating them to canonical `ashina` is deferred to
+  that same review-gated cleanup.
+
 ## Future Structure Candidate
 
 ```text
