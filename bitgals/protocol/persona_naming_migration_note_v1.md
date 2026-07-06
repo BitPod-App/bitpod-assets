@@ -76,31 +76,32 @@ Ashina persona folder (BIT-715): `bitgals/ashina/` is added as its own persona
 folder to hold Ashina's `SOUL_CARD.md`. `Asha` is the living name used inside card
 copy; `ashina` is the folder slug.
 
-UNRESOLVED — do NOT rename or merge `shiva` <-> `ashina` until CJ / Fable decides:
+`shiva` is LEGACY — the retired former name of this same persona (CJ, 2026-07-06):
 
-There is a live identity question, not a stale codename. `shiva` and `ashina`
-currently carry *contradictory* canon and cannot be safely merged by a slug rename:
+`ashina` is canonical. `shiva` is the old identity that was renamed to Ashina
+elsewhere (agent side: `taylor01-mind` PR #75 / BIT-688). Mentions of `shiva` were
+already scrubbed across most surfaces; `bitpod-assets` was simply overlooked because
+few people look here and it holds little logic (mostly a few Cloudflare-published
+public image URLs — logo / avatar / emoticon). They are the SAME persona, not rivals.
 
-- BitGal **Shiva** (this repo): role `core_security_architect`, sovereign custody /
-  "Hades" / air-gapped vault, Kate's arch-nemesis; visuals = Indian descent,
-  dark-brown hair with purple/violet strands, short bob, orange third-eye mark; and a
-  named NFT collectible **"Shiva ₿ — Eclipse"** (`bitgals_nft_workflow_v1.md`,
-  `bitgal_archetype_canon_v2.md`, `bitgal_canon_minimal_v1.yaml`, README).
-- Agent **Ashina** (`taylor01-mind`, PR #75 / BIT-688): role = canon-purifier /
-  documentation-truth gate; visuals = pure black hair with ash/gold strands, candle,
-  ritual archive-keeper (`agents/ashina/SOUL_CARD.md`).
+Intentionally retained as legacy for now (do NOT delete):
 
-These are different roles, different visuals, and Shiva has an NFT. A mechanical
-`shiva -> ashina` rename would overwrite the security-architect NFT persona's canon
-with the canon-purifier's identity — canon corruption, not cleanup.
+- the NFT collectible **"Shiva ₿ — Eclipse"** (`bitgals_nft_workflow_v1.md`) and the
+  old security-architect / "Hades" archetype lore (`bitgal_archetype_canon_v2.md`).
+  That NFT project is not expected to be touched for ~1 year; it will eventually be
+  replaced by an **"Asha ₿ — Ink of the Sun"** once Asha has enough lore and visuals.
+  Ashina's doctrine keeps legacy as history, not active law.
 
-Decision needed from CJ / Fable before any rename:
-1. Is agent Ashina the SAME persona as BitGal Shiva (rename + reconcile role/visuals/NFT), or
-2. a DISTINCT persona (Ashina keeps her own `bitgals/ashina/`; Shiva stays Shiva)?
+Deferred low-priority legacy scrub (fine for someone else to do later, per CJ):
 
-Until decided: `bitgals/shiva/` and its canon (`bitgal_canon_minimal_v1.yaml`,
-`naming_rules.md`, `bitgal_archetype_canon_v2.md`, `bitgals_nft_workflow_v1.md`,
-README, scripts) are intentionally left unchanged.
+- rename `bitgals/shiva/` (empty `.gitkeep` scaffold) to `bitgals/ashina/`, and update
+  the remaining operational `shiva` references (`bitgal_canon_minimal_v1.yaml`,
+  `naming_rules.md`, `codex_handoff.md`, `review_checklist.md`, README persona line,
+  and the `scripts/bitgals_*.py` PERSONAS/regex) to canonical `ashina`, keeping `shiva`
+  only as a legacy-accepted alias where old assets/NFT surfaces still need it.
+
+This PR does NOT do that scrub — it only ADDS `bitgals/ashina/SOUL_CARD.md`. The
+scrub is left untouched here so this change stays additive and low-risk.
 
 ## Future Structure Candidate
 
