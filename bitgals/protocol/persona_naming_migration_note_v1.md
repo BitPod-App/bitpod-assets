@@ -72,6 +72,37 @@ Operational v2 bridge:
 - scripts may accept `kati` as input only to normalize legacy intake toward `kate`.
 - validation tools may still pass existing `kati` filenames for migration compatibility.
 
+Ashina persona folder (BIT-715): `bitgals/ashina/` is added as its own persona
+folder to hold Ashina's `SOUL_CARD.md`. `Asha` is the living name used inside card
+copy; `ashina` is the folder slug.
+
+`shiva` is LEGACY — the retired former name of this same persona (CJ, 2026-07-06):
+
+`ashina` is canonical. `shiva` is the old identity that was renamed to Ashina
+elsewhere (agent side: `taylor01-mind` PR #75 / BIT-688). Mentions of `shiva` were
+already scrubbed across most surfaces; `bitpod-assets` was simply overlooked because
+few people look here and it holds little logic (mostly a few Cloudflare-published
+public image URLs — logo / avatar / emoticon). They are the SAME persona, not rivals.
+
+Intentionally retained as legacy for now (do NOT delete):
+
+- the NFT collectible **"Shiva ₿ — Eclipse"** (`bitgals_nft_workflow_v1.md`) and the
+  old security-architect / "Hades" archetype lore (`bitgal_archetype_canon_v2.md`).
+  That NFT project is not expected to be touched for ~1 year; it will eventually be
+  replaced by an **"Asha ₿ — Ink of the Sun"** once Asha has enough lore and visuals.
+  Ashina's doctrine keeps legacy as history, not active law.
+
+Deferred low-priority legacy scrub (fine for someone else to do later, per CJ):
+
+- rename `bitgals/shiva/` (empty `.gitkeep` scaffold) to `bitgals/ashina/`, and update
+  the remaining operational `shiva` references (`bitgal_canon_minimal_v1.yaml`,
+  `naming_rules.md`, `codex_handoff.md`, `review_checklist.md`, README persona line,
+  and the `scripts/bitgals_*.py` PERSONAS/regex) to canonical `ashina`, keeping `shiva`
+  only as a legacy-accepted alias where old assets/NFT surfaces still need it.
+
+This PR does NOT do that scrub — it only ADDS `bitgals/ashina/SOUL_CARD.md`. The
+scrub is left untouched here so this change stays additive and low-risk.
+
 ## Future Structure Candidate
 
 ```text
