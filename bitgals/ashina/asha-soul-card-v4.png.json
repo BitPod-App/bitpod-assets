@@ -1,0 +1,48 @@
+{
+  "persona": "ashina",
+  "asset_type": "image",
+  "scene": "soul-card",
+  "look": "rich-visual-document-v4",
+  "source_model": "OpenAI built-in image generation",
+  "base_identity_score": null,
+  "persona_score": null,
+  "confusion_score": null,
+  "total_score": null,
+  "decision": "pending_qa",
+  "hard_fail_reasons": [],
+  "required_anchors_present": [
+    "reference-aligned_face",
+    "voluminous_black_curls",
+    "white_ash_forelock",
+    "gold_eye_direction",
+    "black_gold_tailored_suit",
+    "restrained_geometric_detail",
+    "white_futuristic_archive",
+    "directed_candlelight",
+    "provenance_lattice",
+    "yellow_gold_tea",
+    "v4_title_and_provisional_method_copy"
+  ],
+  "missing_required_anchors": [],
+  "forbidden_traits_detected": [],
+  "notes": "BIT-794 Ashina/Asha Soul Card v4 candidate. Uses the actual v3 information architecture and CJ-provided Asha identity reference; includes a new BitPod 2030 visual plus live-SOUL-grounded identity information. Recommended skills and card-only vocabulary are explicitly non-installed and provisional.",
+  "qa_gate": {
+    "status": "pending_pr_qa",
+    "structural_validation_only": true,
+    "canon_or_avatar_approval": false,
+    "promotion_rule": "Do not treat as approved persona canon until PR review and qualitative BitGals/Ashina approval."
+  },
+  "provenance": {
+    "linear_issue": "BIT-794",
+    "linear_issue_url": "https://linear.app/bitpod-app/issue/BIT-794/design-ashina-soul-card-v4-as-a-rich-visual-document-grounded-in-live",
+    "v3_reference": "asha-soul-card-v3.png",
+    "identity_reference": "refs/ashina_image_hq-new-desk_reference_v01.png",
+    "runtime_grounding": "BitPod-App/taylor01-mind agents/ashina/SOUL.md at ce03fb66d3a637cfd51b5055876e9d65d9c69772",
+    "generation_surface": "Codex built-in image generation",
+    "sha256": "6345349fb54f3436c705469e47ca83cd218c0129081ef3a7ffc2415e57a4d10c",
+    "dimensions_px": {
+      "width": 1024,
+      "height": 1536
+    }
+  }
+}
