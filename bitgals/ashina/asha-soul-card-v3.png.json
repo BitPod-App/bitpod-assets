@@ -1,0 +1,17 @@
+{
+  "persona": "ashina",
+  "asset_type": "image",
+  "scene": "soul-card",
+  "look": "visual-document-v3-reference",
+  "source": "CJ-provided Soul Card v3 reference",
+  "decision": "historical_reference",
+  "notes": "Preserved as the direct information-density and modular-layout reference for BIT-794. This file is not a new approval or runtime instruction.",
+  "provenance": {
+    "linear_issue": "BIT-793",
+    "sha256": "bcb5370cec37680c63eea154641ca3f858277f3ff46cd1c95395e18eab8872b2",
+    "dimensions_px": {
+      "width": 1024,
+      "height": 1536
+    }
+  }
+}

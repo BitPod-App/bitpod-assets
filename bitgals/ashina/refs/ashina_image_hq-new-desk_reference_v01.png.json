@@ -1,0 +1,43 @@
+{
+  "persona": "ashina",
+  "asset_type": "image",
+  "scene": "hq-new-desk",
+  "look": "visual-reference",
+  "source_model": null,
+  "base_identity_score": null,
+  "persona_score": null,
+  "confusion_score": null,
+  "total_score": null,
+  "decision": "pending_qa",
+  "hard_fail_reasons": [],
+  "required_anchors_present": [
+    "voluminous_black_curls",
+    "white_ash_streak",
+    "gold_eye_direction",
+    "black_gold_tailored_suit",
+    "restrained_geometric_detail",
+    "white_futuristic_archive",
+    "yellow_gold_tea"
+  ],
+  "missing_required_anchors": [],
+  "forbidden_traits_detected": [],
+  "notes": "CJ-provided visual reference for the BIT-793 Ashina/Asha Soul Card v4. Use as identity and styling guidance; pending qualitative review before any approved-canon promotion.",
+  "qa_gate": {
+    "status": "pending_pr_qa",
+    "structural_validation_only": true,
+    "canon_or_avatar_approval": false,
+    "promotion_rule": "Reference-only until PR review and qualitative BitGals/Ashina approval."
+  },
+  "provenance": {
+    "linear_issue": "BIT-793",
+    "linear_issue_url": "https://linear.app/bitpod-app/issue/BIT-793/publish-asha-soul-card-v3-visual-and-finalize-asset-placement",
+    "source_of_truth": "CJ-provided Codex task attachment",
+    "original_filename": "01-asha-at-new-desk.png",
+    "imported_from": "Codex task attachment; machine-local source path intentionally not retained",
+    "sha256": "24a6eec7f64227d3ed7c89552333ccbd661768b48c34a2c50c7497db5528a075",
+    "dimensions_px": {
+      "width": 1672,
+      "height": 941
+    }
+  }
+}
